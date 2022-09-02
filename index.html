@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test_01</title>
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container flex">
+      <div class="wrapper__pop-up flex">
+        <div class="pop-up flex">
+          <button class="btn-reset pop-up__close-btn"><svg class="pop-up__icon" width="13" height="15" viewBox="0 0 13 15" fill="white"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.87109 0.78125L6.28906 6.23047L9.70703 0.78125H11.9043L7.41211 7.82227L12.0117 15H9.79492L6.28906 9.44336L2.7832 15H0.566406L5.16602 7.82227L0.673828 0.78125H2.87109Z"
+                fill="white" />
+            </svg></button>
+          <h2 class="pop-up__title">Pop-up</h2>
+        </div>
+      </div>
+      <nav class="header__nav nav flex">
+        <ul class="nav_list list-reset flex">
+          <li class="nav__list-item">
+            <a class="nav__link nav__link_current" href="##">
+              Text
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link" href="##">
+              Text
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link" href="##">
+              Text
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__burger burger">
+        <input id="burger__toggle" type="checkbox" />
+        <label class="burger__btn" for="burger__toggle">
+          <span class="burger__string"></span>
+        </label>
+        <div class="burger__menu flex">
+          <ul class="burger__menu-list list-reset">
+            <li class="burger__menu-item"><a class="burger__menu-link" href="##">Text</a></li>
+            <li class="burger__menu-item"><a class="burger__menu-link" href="##">Text</a></li>
+            <li class="burger__menu-item"><a class="burger__menu-link" href="##">Text</a></li>
+            <li class="burger__menu-item"><a class="burger__menu-link" href="##">Text</a></li>
+          </ul>
+          <button class="btn-reset btn burger__menu-btn">Open pop-up button</button>
+        </div>
+      </div>
+  </header>
+  <main class="main">
+    <section class="section hero">
+      <div class="container hero__container">
+        <div class="hero__slider slider">
+          <div class="slider__slide_1 slider__slide flex">
+            <h1 class="slider__slide-title">
+              H1 Text
+            </h1>
+            <button class="btn-reset btn slider__slide-btn">
+              Open pop-up button
+            </button>
+          </div>
+          <div class="slider__slide_2 slider__slide flex">
+            <h1 class="slider__slide-title">
+              H1 Text 2
+            </h1>
+            <button class="btn-reset btn slider__slide-btn">
+              Open pop-up button
+            </button>
+          </div>
+          <button onclick="minusSlide()" class="btn-reset slider__btn slider__btn_prev">
+            <svg class="slider__btn-icon" width="40" height="77" viewBox="0 0 40 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M39.0264 75.5961L1.7475 38.3171L39.0264 1.03821" stroke="white" stroke-width="2" />
+            </svg>
+          </button>
+          <button onclick="plusSlide()" class="btn-reset slider__btn slider__btn_next">
+            <svg class="slider__btn-icon" width="40" height="77" viewBox="0 0 40 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M39.0264 75.5961L1.7475 38.3171L39.0264 1.03821" stroke="white" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section block2">
+      <div class="container block2__container flex">
+        <h2 class="block2__title section__title">
+          H2 text
+        </h2>
+        <ul class="list-reset block2__list flex">
+          <li class="block2__list-item"></li>
+          <li class="block2__list-item"></li>
+          <li class="block2__list-item"></li>
+          <li class="block2__list-item"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section block3">
+      <div class="container block3__container flex">
+        <h2 class="block2__title section__title">
+          H2 text
+        </h2>
+        <ul class="list-reset block3__list flex">
+          <li class="block3__list-item">
+            <div class="block3__content block3__content_shadow"></div>
+          </li>
+          <li class="block3__list-item">
+            <div class="block3__content"></div>
+          </li>
+          <li class="block3__list-item">
+            <div class="block3__content"></div>
+          </li>
+          <li class="block3__list-item">
+            <div class="block3__content"></div>
+          </li>
+          <li class="block3__list-item">
+            <div class="block3__content"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section utp">
+      <div class="container utp__container flex">
+        <h2 class="utp__title section__title">
+          Text utp
+        </h2>
+        <button class="btn-reset btn utp__btn">
+          Open pop-up button
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container flex">
+      <ul class="footer__list list-reset flex">
+        <li class="footer__list-item">Text</li>
+        <li class="footer__list-item">Text</li>
+        <li class="footer__list-item">Text</li>
+        <li class="footer__list-item">Text</li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
